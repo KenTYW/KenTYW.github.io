@@ -13,32 +13,52 @@ body{
     display: table;
 }
 
-.my-block{
+.centerblock{
     text-align: center;
     display: table-cell;
     vertical-align: middle;
 }
 
-a:link, a:visited{
-background-color: #0065e7;
+a{
+  background-color: #0065e7;
   color: white;
   padding: 14px 25px; 
+  border: 2px solid white;
+
   text-decoration: none;
-  display: inline-block;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  width: fit-content;
+}
+
+a:hover, a:active{
+  background-color: #0554ba;
+  color: #E3E3E3;
+}
+
+a.resbutton:link, a.resbutton:visited{
+  border-radius: 15px;
+}
+
+a.rickbutton:link, a.rickbutton:visited{
   border-radius: 25px;
 }
-a:hover, a:active{
-background-color: #0554ba;
-color: #E3E3E3;
-}
+
 </style>
 </head>
 
 <body> 
-<div class="my-block">
+<div class="centerblock">
 <h1>The Kenneth Website is currently under construction.</h1>
 <p>Please come again later, thanks</p>
-<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+<a class="resbutton" href="https://kentyw.github.io/resume" 
+style=" font-family: 'Brush Script MT', cursive">
+Do check out my Résumé
+</a>
+<a class="rickbutton" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
 style=" font-family: 'Brush Script MT', cursive">
 Click here for a Rick Roll
 </a>
